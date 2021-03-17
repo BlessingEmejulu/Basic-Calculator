@@ -9,19 +9,16 @@ function deleteChar(screen) {
 function addChar(screen, character) {
 	if(screen.value == null || !screen.value){
 		screen.value = "";
-	return false;
 	}
 
 	else{
 		screen.value += character;
-		return false;
 	}
 }
 
 //function for equal to button
 function solve(screen){
 	let result = eval(screen.value);
-	result++;
 	screen.value = result;
 }
 
